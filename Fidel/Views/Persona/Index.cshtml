@@ -1,0 +1,88 @@
+﻿@model IEnumerable<Model.PERSONA>
+
+@{
+    ViewBag.Title = "CLIENTES - PERSONAS";
+}
+
+
+<div class="row wrapper border-bottom white-bg page-heading" style="margin-top:20px;">
+    <div class="col-md-12 col-sm-12">
+        <div class="title-action pull-right">
+            <button class="btn btn-primary btn-outline" id="btnNuevo" title="Nuevo Cliente"><i class="fa fa-plus"></i></button>
+            <button class="btn btn-default btn-outline" id="btnRegresar" title="Regresar"><i class="fa fa-home"></i></button>
+        </div>
+    </div>
+</div>
+<br />
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title"> @ViewBag.Title</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-responsive" id="tblPersonas">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ID_PERSONA)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.DOCUMENTO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NOMBRE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.APELLIDO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FECHA_NACIMIENTO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TELEFONO)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ID_PERSONA)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DOCUMENTO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NOMBRE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.APELLIDO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FECHA_NACIMIENTO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TELEFONO)
+                        </td>
+                        <td align="center">
+                            <button class="btn btn-primary" id="btnEditar" title="Editar Cliente"><i class="fa fa-pencil"></i></button>
+                            <button class="btn btn-danger" id="btnEliminar" title="Eliminar Cliente"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@section Styles{
+    @Styles.Render("~/Content/DataTable")
+}
+@section Scripts{
+    @Scripts.Render("~/bundles/DataTable")
+    <script src="~/Scripts/Api/Persona/Persona.js"></script>
+}

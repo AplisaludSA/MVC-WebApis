@@ -1,0 +1,49 @@
+﻿@model Model.PARENTESCO
+
+
+@{
+    ViewBag.Title = "Editar Parentesco";
+}
+
+<div class="row wrapper border-bottom white-bg page-heading" style="margin-top:20px">
+    <div class="col-md-12">
+        <div class="title-action pull-right">
+            <button class="btn btn-default" title="Cancelar" onclick="location.href ='/Parentesco'"><i class="fa fa-times"></i> Regresar</button>
+        </div>
+    </div>
+</div>
+
+<br />
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title"> @ViewBag.Title</h3>
+        </div>
+        <div class="panel-body">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.ID_PARENTESCO)
+            <div>
+                @Html.LabelFor(model => model.NOMBRE, htmlAttributes: new { @class = "control-label" })
+                <br />
+                @Html.EditorFor(model => model.NOMBRE, new { htmlAttributes = new { @class = "form-control" } })
+                <br />
+                @Html.ValidationMessageFor(model => model.NOMBRE, "", new { @class = "text-danger" })
+            </div>
+            <div class="row">
+                <div class="col-md-offset-11">
+                    <button type="submit" class="btn btn-success" title="Guardar"> <i class="fa fa-floppy-o"></i> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+        }
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

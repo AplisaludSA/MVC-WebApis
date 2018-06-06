@@ -1,0 +1,12 @@
+c:\Users\farango\documents\visual studio 2015\Projects\Fidel\Model\bin\Debug\Model.dll
+c:\Users\farango\documents\visual studio 2015\Projects\Fidel\Model\bin\Debug\Model.pdb
+c:\Users\farango\documents\visual studio 2015\Projects\Fidel\Model\obj\Debug\Model.dll
+c:\Users\farango\documents\visual studio 2015\Projects\Fidel\Model\obj\Debug\Model.pdb
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Model\bin\Debug\FidelEntities.mdf
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Model\bin\Debug\FidelEntities_log.ldf
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Model\bin\Debug\EntityFramework.dll
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Model\bin\Debug\EntityFramework.xml
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Model\bin\Debug\Model.dll.config
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

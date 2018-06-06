@@ -1,0 +1,12 @@
+c:\Users\farango\documents\visual studio 2015\Projects\Fidel\Logic\bin\Debug\Logic.dll
+c:\Users\farango\documents\visual studio 2015\Projects\Fidel\Logic\bin\Debug\Logic.pdb
+c:\Users\farango\documents\visual studio 2015\Projects\Fidel\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+c:\Users\farango\documents\visual studio 2015\Projects\Fidel\Logic\obj\Debug\Logic.dll
+c:\Users\farango\documents\visual studio 2015\Projects\Fidel\Logic\obj\Debug\Logic.pdb
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Logic\bin\Debug\FidelEntities.mdf
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Logic\bin\Debug\FidelEntities_log.ldf
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Logic\bin\Debug\EntityFramework.dll
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Logic\bin\Debug\Model.dll
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Logic\bin\Debug\Model.pdb
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Logic\bin\Debug\EntityFramework.xml
+C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Logic\bin\Debug\Z.EntityFramework.Plus.EF6.dll

@@ -1,0 +1,100 @@
+﻿@model  IEnumerable<Model.GRUPO_FAMILIAR>
+
+<div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" id="DlgGrupo">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Grupo Familiar</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row equal">
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Detalle Familiar</div>
+                            <div class="panel-body">
+                                <table class="table-responsive" id="tblGrupoFamiliar" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>ID_PARENTESCO</th>
+                                            <th>PARENTESCO</th>
+                                            <th>DOCUMENTO</th>
+                                            <th>NOMBRE</th>
+                                            <th>APELLIDO</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.ID_GRUPO_FAMILIAR)
+                                                </td>
+
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.ID_PARENTESCO)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.PARENTESCO.NOMBRE)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.DOCUMENTO)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.NOMBRE)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.APELLIDO)
+                                                </td>
+                                                <td align="center">
+                                                    <button class="btn btn-primary" id="btnEditar" title="Editar Cliente"><i class="fa fa-pencil"></i></button>
+                                                    <button class="btn btn-danger" id="btnEliminar" title="Eliminar Cliente"><i class="fa fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Información Familiar</div>
+                            <div class="panel-body">
+                                    <div class="form-group col-md-12">
+                                        @Html.LabelFor(model => model.FirstOrDefault().DOCUMENTO, htmlAttributes: new { @class = "control-label" })
+                                        <br />
+                                        @Html.EditorFor(model => model.FirstOrDefault().DOCUMENTO, new { htmlAttributes = new { @class = "form-control", @id = "Documento_Grupo" } })
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        @Html.LabelFor(model => model.FirstOrDefault().NOMBRE, htmlAttributes: new { @class = "control-label" })
+                                        <br />
+                                        @Html.EditorFor(model => model.FirstOrDefault().NOMBRE, new { htmlAttributes = new { @class = "form-control", @id = "Nombre_Grupo" } })
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        @Html.LabelFor(model => model.FirstOrDefault().APELLIDO, htmlAttributes: new { @class = "control-label" })
+                                        <br />
+                                        @Html.EditorFor(model => model.FirstOrDefault().APELLIDO, new { htmlAttributes = new { @class = "form-control", @id = "Apellido_Grupo" } })
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        @Html.LabelFor(model => model.FirstOrDefault().PARENTESCO, htmlAttributes: new { @class = "control-label" })
+                                        <br />
+                                        <select class="form-control" name="Parentesco_Grupo" id="Parentesco_Grupo"><option value="">Elija Una Opción</option></select>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-success" id="btnAddGrupo"><i class="fa fa-plus"></i> Agregar</button>
+                                        <button class="btn btn-primary" id="btnCleanGrupo"><i class="fa fa-paint-brush"></i> Limpiar</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>

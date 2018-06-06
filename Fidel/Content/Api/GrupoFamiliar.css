@@ -1,0 +1,13 @@
+﻿.modal-dialog{
+    width: 80% !important;
+}
+
+.equal {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.panel {
+    width: 100%;
+    height: 100%;
+}

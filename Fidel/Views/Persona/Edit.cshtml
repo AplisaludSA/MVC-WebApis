@@ -1,0 +1,79 @@
+﻿@model Model.PERSONA
+
+@{
+    ViewBag.Title = "Editar CLIENTES - PERSONAS";
+}
+
+<div class="row wrapper border-bottom white-bg page-heading" style="margin-top:20px;">
+    <div class="col-md-12">
+        <div class="title-action pull-right">
+            <button type="submit" class="btn btn-success" title="Guardar" id="btnGuardarPersona"> <i class="fa fa-floppy-o"></i> </button>
+            <button class="btn btn-default" title="Cancelar" onclick="location.href ='/Persona'"><i class="fa fa-times"></i> Regresar</button>
+        </div>
+    </div>
+</div>
+
+<br />
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title"> @ViewBag.Title</h3>
+    </div>
+    <div class="panel-body">
+                @Html.HiddenFor(model => model.ID_PERSONA)
+
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        @Html.LabelFor(model => model.DOCUMENTO, htmlAttributes: new { @class = "control-label" })
+                        <br />
+                        @Html.EditorFor(model => model.DOCUMENTO, new { htmlAttributes = new { @class = "form-control" } })
+                        <br />
+                        @Html.ValidationMessageFor(model => model.DOCUMENTO, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        @Html.LabelFor(model => model.NOMBRE, htmlAttributes: new { @class = "control-label" })
+                        <br />
+                        @Html.EditorFor(model => model.NOMBRE, new { htmlAttributes = new { @class = "form-control" } })
+                        <br />
+                        @Html.ValidationMessageFor(model => model.NOMBRE, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        @Html.LabelFor(model => model.APELLIDO, htmlAttributes: new { @class = "control-label" })
+                        <br />
+                        @Html.EditorFor(model => model.APELLIDO, new { htmlAttributes = new { @class = "form-control" } })
+                        <br />
+                        @Html.ValidationMessageFor(model => model.APELLIDO, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        @Html.LabelFor(model => model.FECHA_NACIMIENTO, htmlAttributes: new { @class = "control-label" })
+                        <br />
+                        @Html.EditorFor(model => model.FECHA_NACIMIENTO, new { htmlAttributes = new { @class = "form-control" } })
+                        <br />
+                        @Html.ValidationMessageFor(model => model.FECHA_NACIMIENTO, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        @Html.LabelFor(model => model.TELEFONO, htmlAttributes: new { @class = "control-label" })
+                        <br />
+                        @Html.EditorFor(model => model.TELEFONO, new { htmlAttributes = new { @class = "form-control" } })
+                        <br />
+                        @Html.ValidationMessageFor(model => model.TELEFONO, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+    </div>
+    </div>
+@Html.Partial("_GrupoFamiliar", Model.GRUPO_FAMILIAR)
+@section Styles{   
+    @Styles.Render("~/Content/DatePicker")
+    @Styles.Render("~/Content/GrupoFamiliar")
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/DatePicker")
+    @Scripts.Render("~/bundles/GrupoFamiliar")
+    @Scripts.Render("~/bundles/EditPersona")
+}
