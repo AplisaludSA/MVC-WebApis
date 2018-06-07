@@ -10,3 +10,15 @@ C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Model\bin\Debug\Ent
 C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Model\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Model\bin\Debug\Model.dll.config
 C:\Users\farango\Documents\Visual Studio 2015\Projects\Fidel\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\farango\Documents\GitHub\MVC-WebApis\Model\bin\Debug\FidelEntities.mdf
+C:\Users\farango\Documents\GitHub\MVC-WebApis\Model\bin\Debug\FidelEntities_log.ldf
+C:\Users\farango\Documents\GitHub\MVC-WebApis\Model\bin\Debug\Model.dll.config
+C:\Users\farango\Documents\GitHub\MVC-WebApis\Model\bin\Debug\Model.dll
+C:\Users\farango\Documents\GitHub\MVC-WebApis\Model\bin\Debug\Model.pdb
+C:\Users\farango\Documents\GitHub\MVC-WebApis\Model\bin\Debug\EntityFramework.dll
+C:\Users\farango\Documents\GitHub\MVC-WebApis\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\farango\Documents\GitHub\MVC-WebApis\Model\bin\Debug\EntityFramework.xml
+C:\Users\farango\Documents\GitHub\MVC-WebApis\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\farango\Documents\GitHub\MVC-WebApis\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\farango\Documents\GitHub\MVC-WebApis\Model\obj\Debug\Model.dll
+C:\Users\farango\Documents\GitHub\MVC-WebApis\Model\obj\Debug\Model.pdb
